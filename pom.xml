@@ -96,8 +96,7 @@
 						<version>2.2.0</version>
 						<configuration>
 							<to>
-								<!--suppress UnresolvedMavenProperty -->
-								<image>${jonasmaibohm}/microservicedemocicd</image>
+								<image>jonasmaibohm/microservicedemocicd</image>
 								<tags>
 									<tag>${project.version}</tag>
 									<tag>latest</tag>
