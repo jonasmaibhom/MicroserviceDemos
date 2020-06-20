@@ -1,0 +1,9 @@
+version: "3.8"
+services:
+  microservicedemo:
+    build:
+      context: .
+    container_name: microservicedemo
+    image: jonasmaibohm/microservicedemo
+    ports:
+    - 8080:8080

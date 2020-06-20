@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: microservicedemo-service
+  labels:
+    app: microservicedemo
+spec:
+  type: LoadBalancer
+  selector:
+    app: microservicedemo
+  ports:
+    - protocol: TCP
+      name: http
+      port: 8080
+      targetPort: 8080
