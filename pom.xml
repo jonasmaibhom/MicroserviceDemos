@@ -14,6 +14,7 @@
 	<name>MicroserviceDemo</name>
 	<description>Demo project for Spring Boot</description>
 
+
 	<properties>
 		<java.version>1.8</java.version>
 	</properties>
@@ -72,7 +73,42 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+
+		<dependency>
+			<groupId>com.google.cloud.tools</groupId>
+			<artifactId>jib-maven-plugin</artifactId>
+			<version>2.2.0</version>
+			<type>maven-plugin</type>
+		</dependency>
 	</dependencies>
+
+	<profiles>
+		<profile>
+			<id>deploy-docker</id>
+			<properties>
+				<maven.deploy.skip>true</maven.deploy.skip>
+			</properties>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>com.google.cloud.tools</groupId>
+						<artifactId>jib-maven-plugin</artifactId>
+						<version>2.2.0</version>
+						<configuration>
+							<to>
+								<!--suppress UnresolvedMavenProperty -->
+								<image>${jonasmaibohm}/microservicedemocicd</image>
+								<tags>
+									<tag>${project.version}</tag>
+									<tag>latest</tag>
+								</tags>
+							</to>
+						</configuration>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+	</profiles>
 
 	<build>
 		<plugins>
