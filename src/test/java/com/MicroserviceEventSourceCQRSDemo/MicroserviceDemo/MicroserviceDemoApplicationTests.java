@@ -1,13 +1,13 @@
-//package com.MicroserviceEventSourceCQRSDemo.MicroserviceDemo;
-//
-//import org.junit.jupiter.api.Test;
-//import org.springframework.boot.test.context.SpringBootTest;
-//
-//@SpringBootTest
-//class MicroserviceDemoApplicationTests {
-//
-//	@Test
-//	void contextLoads() {
-//	}
-//
-//}
+package com.MicroserviceEventSourceCQRSDemo.MicroserviceDemo;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+
+@SpringBootTest
+class MicroserviceDemoApplicationTests {
+
+	@Test
+	void contextLoads() {
+	}
+
+}

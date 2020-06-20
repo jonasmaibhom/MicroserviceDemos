@@ -22,10 +22,10 @@ spec:
     spec:
       containers:
         - name: microservicedemo
-          image: jonasmaibohm/microservicedemo
+          image: jonasmaibohm/baeldung-ci-cd-process
           imagePullPolicy: Always
           ports:
-            - containerPort: 8080
+            - containerPort: 8083
           resources:
             requests:
               memory: "64Mi"
