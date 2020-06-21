@@ -22,7 +22,7 @@ spec:
     spec:
       containers:
         - name: microservicedemo
-          image: jonasmaibohm/baeldung-ci-cd-process
+          image: jonasmaibohm/microservicedemov2
           imagePullPolicy: Always
           ports:
             - containerPort: 8083

@@ -101,7 +101,7 @@
                     <version>1.0.1</version>
                     <configuration>
                         <to>
-                            <image>jonasmaibohm/MicroserviceDemoV2</image>
+                            <image>jonasmaibohm/microservicedemov2</image>
                             <tags>
                                 <tag>${project.version}</tag>
                                 <tag>latest</tag>
