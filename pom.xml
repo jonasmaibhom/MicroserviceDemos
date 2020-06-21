@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.MicroserviceEventSourceCQRSDemo</groupId>
     <artifactId>MicroserviceDemo</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.2-SNAPSHOT</version>
     <name>MicroserviceDemo</name>
     <description>Demo project for Spring Boot</description>
 
@@ -101,7 +101,7 @@
                     <version>1.0.1</version>
                     <configuration>
                         <to>
-                            <image>jonasmaibohm/baeldung-ci-cd-process</image>
+                            <image>jonasmaibohm/MicroserviceDemoV2</image>
                             <tags>
                                 <tag>${project.version}</tag>
                                 <tag>latest</tag>

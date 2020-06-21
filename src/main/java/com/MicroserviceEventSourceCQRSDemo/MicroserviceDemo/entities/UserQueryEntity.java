@@ -2,22 +2,21 @@ package com.MicroserviceEventSourceCQRSDemo.MicroserviceDemo.entities;
 
 import org.springframework.data.mongodb.core.mapping.Document;
 
-import javax.persistence.Entity;
 import javax.persistence.Id;
 
 @Document
-public class AccountQueryEntity {
+public class UserQueryEntity {
 
     @Id
     private String id;
 
-    private double accountBalance;
+    private String address;
 
-    private String currency;
+    private String name;
 
     private String status;
 
-    public AccountQueryEntity() {
+    public UserQueryEntity() {
     }
 
     public String getId() {
@@ -28,20 +27,20 @@ public class AccountQueryEntity {
         this.id = id;
     }
 
-    public double getAccountBalance() {
-        return accountBalance;
+    public String getAddress() {
+        return address;
     }
 
-    public void setAccountBalance(double accountBalance) {
-        this.accountBalance = accountBalance;
+    public void setAddress(String address) {
+        this.address = address;
     }
 
-    public String getCurrency() {
-        return currency;
+    public String getName() {
+        return name;
     }
 
-    public void setCurrency(String currency) {
-        this.currency = currency;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getStatus() {
@@ -54,10 +53,10 @@ public class AccountQueryEntity {
 
     @Override
     public String toString() {
-        return "AccountQueryEntity{" +
+        return "UserQueryEntity{" +
                 "id='" + id + '\'' +
-                ", accountBalance=" + accountBalance +
-                ", currency='" + currency + '\'' +
+                ", address='" + address + '\'' +
+                ", name='" + name + '\'' +
                 ", status='" + status + '\'' +
                 '}';
     }
